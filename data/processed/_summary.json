@@ -1,0 +1,44 @@
+[
+  {
+    "bang": "fact_crypto_daily",
+    "dong": 123358,
+    "cot": 47,
+    "file": "fact_crypto_daily.csv.gz"
+  },
+  {
+    "bang": "fact_market_daily",
+    "dong": 185694,
+    "cot": 4,
+    "file": "fact_market_daily.csv"
+  },
+  {
+    "bang": "fact_macro_daily",
+    "dong": 5009,
+    "cot": 16,
+    "file": "fact_macro_daily.csv"
+  },
+  {
+    "bang": "fact_country_macro",
+    "dong": 2580,
+    "cot": 17,
+    "file": "fact_country_macro.csv"
+  },
+  {
+    "bang": "fact_fx_daily",
+    "dong": 78628,
+    "cot": 3,
+    "file": "fact_fx_daily.csv"
+  },
+  {
+    "bang": "dim_coin",
+    "dong": 63,
+    "cot": 9,
+    "file": "dim_coin.csv"
+  },
+  {
+    "bang": "dim_country",
+    "dong": 249,
+    "cot": 9,
+    "file": "dim_country.csv"
+  }
+]

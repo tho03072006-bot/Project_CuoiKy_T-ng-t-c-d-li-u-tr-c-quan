@@ -1,0 +1,16 @@
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and temporary work
+.idea/
+tmp/
+.env
+.env.*
+
+# SQLite transient files (the validated database itself is included)
+*.db-journal
+*.db-wal
+*.db-shm

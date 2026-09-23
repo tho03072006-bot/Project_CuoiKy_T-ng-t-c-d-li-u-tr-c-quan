@@ -1,0 +1,12 @@
+# Python 3.11; versions used for the verified local build.
+pandas==3.0.6
+numpy==2.4.6
+requests==2.34.2
+python-dateutil==2.9.0.post0
+streamlit==1.64.0
+plotly==7.1.0
+scikit-learn==1.9.1
+statsmodels==0.15.0
+scipy==1.17.1
+matplotlib>=3.9,<4
+seaborn>=0.13,<0.14

@@ -1,0 +1,191 @@
+{
+  "do_phu": {
+    "so_coin": 39,
+    "so_ngay_it_nhat": 1839,
+    "so_ngay_nhieu_nhat": 5789
+  },
+  "missing": {
+    "Giá USD": 0.0,
+    "Khối lượng": 0.0,
+    "Thị phần BTC": 0.0,
+    "S&P 500": 0.73,
+    "Chỉ số USD": 0.73,
+    "Lạm phát Mỹ": 0.73,
+    "VIX": 0.73,
+    "Giá vàng": 0.73,
+    "Số giao dịch": 4.64,
+    "Vốn hoá": 5.36,
+    "Địa chỉ hoạt động": 8.2,
+    "Lượng cung": 9.34,
+    "MVRV": 12.91,
+    "Hashrate": 70.11,
+    "Dòng tiền vào sàn": 92.34
+  },
+  "phan_phoi": {
+    "BTC": {
+      "do_lech_skew": -0.75,
+      "do_nhon_kurtosis": 21.45,
+      "jarque_bera": 111527.6,
+      "p_value": 0.0,
+      "ket_luan": "Bác bỏ giả thuyết phân phối chuẩn"
+    },
+    "ETH": {
+      "do_lech_skew": -0.138,
+      "do_nhon_kurtosis": 8.42,
+      "jarque_bera": 11642.5,
+      "p_value": 0.0,
+      "ket_luan": "Bác bỏ giả thuyết phân phối chuẩn"
+    }
+  },
+  "bien_dong_trung_vi_theo_nam": {
+    "2013": 87.8,
+    "2014": 64.5,
+    "2015": 58.4,
+    "2016": 40.1,
+    "2017": 89.0,
+    "2018": 73.2,
+    "2019": 65.5,
+    "2020": 54.9,
+    "2021": 71.5,
+    "2022": 62.3,
+    "2023": 41.6,
+    "2024": 49.6,
+    "2025": 40.5,
+    "2026": 42.4
+  },
+  "tuong_quan_thang_BTC": {
+    "ETH": {
+      "r": 0.727,
+      "p": 0.0,
+      "co_y_nghia": true
+    },
+    "S&P 500": {
+      "r": 0.201,
+      "p": 0.0452,
+      "co_y_nghia": true
+    },
+    "Vàng": {
+      "r": -0.08,
+      "p": 0.43,
+      "co_y_nghia": false
+    },
+    "VIX": {
+      "r": -0.019,
+      "p": 0.8536,
+      "co_y_nghia": false
+    },
+    "Chỉ số USD": {
+      "r": -0.068,
+      "p": 0.4987,
+      "co_y_nghia": false
+    },
+    "Lạm phát Mỹ": {
+      "r": -0.208,
+      "p": 0.0383,
+      "co_y_nghia": true
+    },
+    "Lợi suất 10 năm": {
+      "r": -0.114,
+      "p": 0.259,
+      "co_y_nghia": false
+    },
+    "Lãi suất thực": {
+      "r": 0.129,
+      "p": 0.2005,
+      "co_y_nghia": false
+    },
+    "Dầu Brent": {
+      "r": -0.135,
+      "p": 0.1803,
+      "co_y_nghia": false
+    }
+  },
+  "so_quan_sat_thang": 100,
+  "cua_so_thang": {
+    "tu": "2018-01-31",
+    "den": "2026-04-30",
+    "chi_thang_hoan_chinh": true,
+    "p_value_chua_hieu_chinh_da_kiem_dinh": true
+  },
+  "hoi_quy_BTC_SP500": {
+    "he_so_goc": 1.047,
+    "r": 0.201,
+    "r_binh_phuong": 0.04,
+    "p_value": 0.045212487545653296,
+    "so_quan_sat_thang": 100
+  },
+  "lam_phat_2023": {
+    "so_quoc_gia": 170,
+    "so_lam_phat_cao": 36,
+    "trung_vi_toan_cau": 5.8,
+    "theo_chau_luc": {
+      "Bắc Mỹ": {
+        "so_nuoc": 22,
+        "vuot_10pct": 1,
+        "trung_vi": 4.48
+      },
+      "Châu Phi": {
+        "so_nuoc": 45,
+        "vuot_10pct": 14,
+        "trung_vi": 6.34
+      },
+      "Châu Á": {
+        "so_nuoc": 42,
+        "vuot_10pct": 9,
+        "trung_vi": 3.66
+      },
+      "Châu Âu": {
+        "so_nuoc": 40,
+        "vuot_10pct": 8,
+        "trung_vi": 6.55
+      },
+      "Châu Đại Dương": {
+        "so_nuoc": 11,
+        "vuot_10pct": 2,
+        "trung_vi": 6.35
+      },
+      "Nam Mỹ": {
+        "so_nuoc": 10,
+        "vuot_10pct": 2,
+        "trung_vi": 5.25
+      }
+    }
+  },
+  "kiem_chung_su_kien": [
+    {
+      "ngay": "2020-03-12",
+      "su_kien": "Sập COVID",
+      "giam_pct": -37.53,
+      "z_score": -10.08,
+      "bi_danh_dau": true
+    },
+    {
+      "ngay": "2021-05-19",
+      "su_kien": "Trung Quốc cấm đào",
+      "giam_pct": -12.03,
+      "z_score": -2.78,
+      "bi_danh_dau": false
+    },
+    {
+      "ngay": "2022-06-13",
+      "su_kien": "Khủng hoảng Celsius/Terra",
+      "giam_pct": -16.82,
+      "z_score": -3.98,
+      "bi_danh_dau": false
+    },
+    {
+      "ngay": "2022-11-09",
+      "su_kien": "Sụp đổ FTX",
+      "giam_pct": -14.92,
+      "z_score": -3.49,
+      "bi_danh_dau": false
+    }
+  ],
+  "ngoai_lai": {
+    "tong_so_ngay_BTC": 54,
+    "so_ngay_truoc_2015": 49,
+    "ty_le_truoc_2015_pct": 90.7,
+    "ngay_giam_manh_nhat": "2013-04-11",
+    "muc_giam_manh_nhat_pct": -48.57
+  }
+}

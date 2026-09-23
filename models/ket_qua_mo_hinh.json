@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "tuyen_tinh": {
+    "n": 100,
+    "n_train": 72,
+    "n_test": 28,
+    "so_bien": 6,
+    "so_bien_ung_vien": 6,
+    "r2": 0.07493500553778953,
+    "r2_hieu_chinh": -0.010455609335645155,
+    "r2_test": 0.130869361360483,
+    "mae_test": 0.10270042966378172,
+    "rmse_test": 0.13251110237950683,
+    "mae_co_so": 0.10882262436502217,
+    "rmse_co_so": 0.14538607557626282,
+    "hon_co_so": true,
+    "coverage_test": 1.0,
+    "f_stat": 1.6330938186176176,
+    "f_pvalue": 0.15222588084438257,
+    "aic": -9.84909051141912,
+    "bic": 6.087572321693266,
+    "durbin_watson": 1.855240247280432,
+    "jarque_bera_p": 0.34523285623477823,
+    "so_bien_co_y_nghia": 0,
+    "ngay_train_dau": "2018-01-31",
+    "ngay_train_cuoi": "2023-12-31",
+    "ngay_test_dau": "2024-01-31",
+    "ngay_test_cuoi": "2026-04-30"
+  },
+  "he_so_tuyen_tinh": [
+    {
+      "bien": "const",
+      "he_so": 0.030153704042048222,
+      "sai_so_chuan": 0.020686230298262397,
+      "t": 1.4576703250075038,
+      "p": 0.14974616512723551,
+      "ci_duoi": -0.011159550668338833,
+      "ci_tren": 0.07146695875243528
+    },
+    {
+      "bien": "btc_ret_tre1",
+      "he_so": 0.08782515981124728,
+      "sai_so_chuan": 0.13887206918932146,
+      "t": 0.6324177375906815,
+      "p": 0.5293323673563627,
+      "ci_duoi": -0.1895215139835838,
+      "ci_tren": 0.36517183360607836
+    },
+    {
+      "bien": "sp500_tre2",
+      "he_so": 1.1543076375124817,
+      "sai_so_chuan": 0.8146861056273004,
+      "t": 1.4168740936408581,
+      "p": 0.16129496318402384,
+      "ci_duoi": -0.4727328674760518,
+      "ci_tren": 2.781348142501015
+    },
+    {
+      "bien": "cpi_yoy_pct_tre2",
+      "he_so": -0.18453329187077183,
+      "sai_so_chuan": 0.09518729237229583,
+      "t": -1.9386336901886714,
+      "p": 0.05689027845074999,
+      "ci_duoi": -0.37463544186467684,
+      "ci_tren": 0.00556885812313318
+    },
+    {
+      "bien": "dxy_tre2",
+      "he_so": -0.0493751911155863,
+      "sai_so_chuan": 1.703978205528014,
+      "t": -0.028976421737909697,
+      "p": 0.9769721807454509,
+      "ci_duoi": -3.4524546604493636,
+      "ci_tren": 3.3537042782181907
+    },
+    {
+      "bien": "real_rate_tre2",
+      "he_so": -0.18961792721977844,
+      "sai_so_chuan": 0.10543887287304171,
+      "t": -1.7983683062327136,
+      "p": 0.07676212376833244,
+      "ci_duoi": -0.4001938972526553,
+      "ci_tren": 0.02095804281309846
+    },
+    {
+      "bien": "vix_tre2",
+      "he_so": 0.006711973316844301,
+      "sai_so_chuan": 0.005250360509480949,
+      "t": 1.2783833233401811,
+      "p": 0.2056603191868913,
+      "ci_duoi": -0.0037737206893644548,
+      "ci_tren": 0.017197667323053056
+    }
+  ],
+  "logistic": {
+    "accuracy": 0.5080091533180778,
+    "precision": 0.5113960113960114,
+    "recall": 0.804932735426009,
+    "f1": 0.6254355400696864,
+    "auc": 0.5113417291815096,
+    "brier": 0.2500442716512597,
+    "accuracy_co_so": 0.5102974828375286,
+    "f1_co_so": 0.6757575757575758,
+    "brier_co_so": 0.24999421956761508,
+    "nhan_co_so": 1,
+    "hon_co_so": false,
+    "n_train": 2191,
+    "n_test": 874,
+    "ty_le_tang_train": 0.5203103605659516,
+    "ty_le_tang_test": 0.5102974828375286,
+    "ngay_train_dau": "2018-01-01",
+    "ngay_train_cuoi": "2023-12-31",
+    "ngay_test_dau": "2024-01-01",
+    "ngay_test_cuoi": "2026-05-23"
+  },
+  "ma_tran_nham_lan": [
+    [
+      85,
+      343
+    ],
+    [
+      87,
+      359
+    ]
+  ],
+  "phien_gan_nhat": {
+    "ngay": "2026-05-24",
+    "ngay_thong_tin": "2026-05-23",
+    "xac_suat_tang": 0.4940099788871828,
+    "loai": "refit_toan_bo_lich_su"
+  },
+  "du_bao_thang_tiep": {
+    "thang": "2026-05-31",
+    "ngay_thong_tin": "2026-04-30",
+    "loi_suat_du_bao": 0.017765876084155793,
+    "can_duoi": -0.38259765048874705,
+    "can_tren": 0.41812940265705867,
+    "gia_truoc": 76299.616129,
+    "gia_du_bao": 77655.14565441647,
+    "loai": "refit_toan_bo_thang_hoan_tat"
+  },
+  "phuong_phap": {
+    "tuyen_tinh": {
+      "target": "Lợi suất BTC tháng hoàn tất",
+      "split": "Train <2024; holdout >=2024",
+      "baseline": "Lợi suất 0, tương ứng giữ nguyên giá tháng trước",
+      "sai_so_chuan": "HAC, maxlags=3",
+      "dac_trung": "BTC lợi suất trễ 1 tháng; S&P500 và DXY lợi suất, CPI YoY/lãi suất thực/VIX sai phân trễ 2 tháng",
+      "han_che": "Vĩ mô không có vintage/ngày công bố; lag 2 tháng là giả định. Khoảng dự báo 95% xấp xỉ theo OLS, không bảo đảm với đuôi dày. P-value sau chọn VIF có tính thăm dò; hệ số không chứng minh nhân quả."
+    },
+    "logistic": {
+      "dac_trung": "7 biến giá/khối lượng tính nhân quả, trễ 1 ngày; bỏ vĩ mô/on-chain không rõ ngày khả dụng",
+      "baseline": "Lớp đa số trên train; xác suất baseline là tỷ lệ tăng trên train",
+      "nguong": 0.5,
+      "han_che": "Đánh giá holdout lịch sử, chưa xác minh thời điểm công bố từng dòng dữ liệu. Không suy ra giả thuyết thị trường hiệu quả hay lợi nhuận giao dịch chỉ từ accuracy/AUC."
+    }
+  },
+  "provenance": {
+    "schema_version": 2,
+    "source": "data\\processed\\fact_crypto_daily.csv.gz",
+    "source_sha256": "506f2ed94593bcdb1594bdabad8933d9a991143b19aedf5403ee64b8b10f8b6b",
+    "source_size_bytes": 15548591,
+    "source_mtime_ns": 1790151071079602100,
+    "btc_cutoff": "2026-05-23",
+    "random_state": 42,
+    "python": "3.11.9",
+    "packages": {
+      "pandas": "3.0.6",
+      "numpy": "2.4.6",
+      "scikit-learn": "1.9.1",
+      "statsmodels": "0.15.0"
+    }
+  }
+}

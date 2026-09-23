@@ -1,0 +1,24 @@
+# Theme của Streamlit, đặt trùng bảng màu trong CLAUDE.md.
+# Vì sao cần file này: template Plotly "idv" chỉ tô nền BÊN TRONG khung hình.
+# Nếu không chỉnh theme, nền app vẫn trắng #ffffff còn nền hình là #fcfcfb -
+# nhìn ra ngay một ô chữ nhật lệch màu quanh mỗi biểu đồ.
+#
+# File nằm cạnh app.py nên có mức ưu tiên cao hơn config ở thư mục đang đứng,
+# tức là chạy `streamlit run dashboard/app.py` từ đâu cũng ăn đúng theme này.
+
+[theme]
+base = "light"
+primaryColor = "#2a78d6"          # xanh định danh, dùng cho widget đang chọn
+backgroundColor = "#fcfcfb"       # nền chính, trùng SURFACE của Plotly
+secondaryBackgroundColor = "#f3f2ee"  # nền sidebar và widget, đậm hơn nền một bậc
+textColor = "#0b0b0b"             # chữ chính
+borderColor = "#e8e7e3"           # viền thẻ, trùng màu lưới
+font = "sans-serif"
+
+# Màu biểu đồ cho các thành phần Streamlit tự vẽ (sparkline trong st.metric...).
+# Hình Plotly trong app đều gọi theme=None nên không bị các giá trị này chi phối.
+chartCategoricalColors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e34948"]
+
+[server]
+# Không cần thu thập số liệu sử dụng khi demo offline trước lớp.
+headless = true
