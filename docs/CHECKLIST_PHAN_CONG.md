@@ -1,6 +1,6 @@
 # Checklist bàn giao cho 2 thành viên — Đề tài 09
 
-**Mốc chung:** `main` tại commit `44a6b88` (23/09/2026). Hai thành viên tạo nhánh riêng từ `main` và mở pull request trước khi gộp. Đây là checklist hoàn thiện **sản phẩm và phân tích**, chưa làm báo cáo IEEE hay quay video.
+**Mốc dữ liệu và mã nguồn đã bàn giao:** commit `44a6b88` (23/09/2026); checklist này được thêm sau đó trên `main`. Hai thành viên tạo nhánh riêng từ `main` mới nhất và mở pull request trước khi gộp. Đây là checklist hoàn thiện **sản phẩm và phân tích**, chưa làm báo cáo IEEE hay quay video.
 
 ## Hiện trạng đã có, không làm lại từ đầu
 
