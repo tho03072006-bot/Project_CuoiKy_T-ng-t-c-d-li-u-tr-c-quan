@@ -150,12 +150,14 @@ danh. Lưới phải liền nét và mờ, không dùng nét đứt.
 
 ## Tiến độ theo barem (10 điểm)
 
+**Cập nhật 24/09/2026:** bảng này chỉ ghi hiện vật đã có, không tự chấm điểm. Phân công và tiêu chí nghiệm thu mới nhất nằm ở [`docs/CHECKLIST_PHAN_CONG.md`](docs/CHECKLIST_PHAN_CONG.md). Bạn phụ trách yêu cầu bắt buộc 1 (bài toán/dataset), Thắng yêu cầu 2 (pipeline/EDA), Tài yêu cầu 3 (dashboard); cả ba viết báo cáo **sau khi** sản phẩm được kiểm tra và chốt.
+
 | Mục | Điểm | Trạng thái |
 |---|---|---|
-| 1. Thu thập & Tiền xử lý | 2,5 | **XONG 2,5/2,5** |
-| 2. Dashboard | 3,5 | chưa làm |
-| 3. Insight & Dự báo | 2,0 | mới có nguyên liệu từ EDA |
-| 4. Báo cáo & Demo | 2,0 | mới có ~12–15 trang nguyên liệu |
+| 1. Thu thập & Tiền xử lý | 2,5 | Có dữ liệu raw, 7 bảng, pipeline và 10 hình EDA; còn kiểm tra tái lập, hình và các giả định (đặc biệt DXY). |
+| 2. Dashboard | 3,5 | Có 5 trang Streamlit + Plotly, mã cho 9 kiểu biểu đồ; còn kiểm tra thao tác thật và UI trên bản clone mới. |
+| 3. Insight & Dự báo | 2,0 | Có mã và kết quả mô hình; còn kiểm chứng insight, giới hạn mô hình và hiển thị sau tích hợp. |
+| 4. Báo cáo & Demo | 2,0 | Chưa viết báo cáo cuối kỳ hoặc quay video; cả nhóm thực hiện sau khi chốt sản phẩm. |
 
 ### Yêu cầu bắt buộc của mục 2 (3,5 đ)
 - Công cụ: **Streamlit + Plotly** (nhóm đã chốt)
@@ -180,6 +182,4 @@ danh. Lưới phải liền nét và mờ, không dùng nét đứt.
 
 ## Môi trường
 
-Windows, Python có sẵn pandas/numpy/matplotlib/seaborn/scipy.
-Cần cài thêm: `pip install streamlit plotly scikit-learn statsmodels`
-Chạy dashboard: `streamlit run dashboard/app.py`
+Windows, Python 3.11. Chạy `setup.bat` để tạo môi trường và cài `requirements.txt`; chạy `run_dashboard.bat` để mở ứng dụng. `run_all.bat` tái lập pipeline, EDA, mô hình và kiểm tra.

@@ -17,6 +17,7 @@
 | `docs/BAN_GIAO_DU_LIEU.md` | Bàn giao dữ liệu, khóa nối, giới hạn và cách sử dụng từng bảng. |
 | `docs/CHI_TIET_DATA_RAW.md` | Nguồn, schema và ý nghĩa cột của từng file raw, kèm danh mục 63 CSV Coin Metrics. |
 | `docs/CHI_TIET_7_BANG_PROCESSED.md` | Đủ 7 bảng xử lý, ý nghĩa cột, khóa và từng bước làm sạch/biến đổi. |
+| `docs/CHECKLIST_PHAN_CONG.md` | Phân công theo rubric: bạn yêu cầu 1, Thắng yêu cầu 2, Tài yêu cầu 3; mốc chốt sản phẩm trước khi cả ba viết báo cáo. |
 | `docs/TU_DIEN_DU_LIEU.md` | Từ điển cột. |
 | `scripts/` | Pipeline tiền xử lý và dựng cơ sở dữ liệu; thư mục `tuy_chon_khi_co_mang_thuong/` chỉ dùng khi cần tải bổ sung. |
 | `eda/` | Script, hình và thống kê khám phá. |

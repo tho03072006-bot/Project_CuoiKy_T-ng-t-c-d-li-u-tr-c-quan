@@ -2,6 +2,19 @@
 
 Kiểm kê ngày 24/09/2026 từ CSV hiện có và [`scripts/pipeline_tien_xu_ly.py`](../scripts/pipeline_tien_xu_ly.py). Nguồn và cột raw: [CHI_TIET_DATA_RAW.md](CHI_TIET_DATA_RAW.md). Bảy CSV là dữ liệu phân tích; `crypto_macro.db` là bản sao SQLite của chúng; `_summary.json`/`_quality_checks.json` là metadata, không phải bảng dữ liệu độc lập.
 
+## Công cụ thực hiện Join/Merge
+
+Pipeline chạy bằng **Python 3.11**, dùng **Pandas** để đọc CSV, `concat`, `merge`, `groupby`, `pivot_table`, `resample` và forward-fill; **NumPy** hỗ trợ tính log, z-score và các chỉ số dẫn xuất. Không có thao tác join trong Excel, Power BI hay SQL ở bước tạo bảy bảng. `scripts/make_db.py` dùng `sqlite3`/Pandas `to_sql` để chép **kết quả đã xử lý** vào `crypto_macro.db` và kiểm tra tính toàn vẹn; SQLite không phải nơi thực hiện các join gốc. PyCharm/VS Code chỉ là môi trường chạy và sửa script, còn Streamlit + Plotly là tầng dashboard đọc dữ liệu đã xử lý.
+
+| Thao tác Pandas | Khóa | Kết quả |
+|---|---|---|
+| `concat` các CSV Coin Metrics | `ticker,date` | Hai fact giá và thị trường, bỏ khóa trùng; không phải join chéo 63 coin. |
+| `merge(..., how="outer")` các chuỗi vĩ mô | `date` | `fact_macro_daily`; sau đó đưa về ngày và điền tiếp có giới hạn. |
+| `merge(..., how="outer")` lạm phát/GDP/dân số | `iso3,year` | Panel `fact_country_macro`; `merge(..., how="left")` với `dim_country` theo `iso3`. |
+| `merge(..., how="left", validate="many_to_one")` | `date`, rồi `ticker` | Gắn macro, tổng vốn hóa/BTC dominance và nhóm coin vào `fact_crypto_daily` mà không nhân dòng. |
+
+`fact_fx_daily` chỉ lọc/đổi tên cột, **chưa join** với panel quốc gia. Bảng crypto cũng **không join trực tiếp** với panel quốc gia vì đơn vị quan sát khác nhau: coin–ngày so với quốc gia–năm.
+
 ## Quy trình chung đã chạy
 
 1. Đọc 63 coin từ `raw/coinmetrics_raw.tar.gz` (bản giải nén cùng nội dung chỉ để xem); chuyển `time` UTC thành `date`, chuẩn hóa ticker, loại ngày không hợp lệ. Giá ưu tiên `PriceUSD`, rồi `ReferenceRateUSD`/`ReferenceRate` nếu chuỗi có >180 giá trị; bỏ giá thiếu/không dương và coin dưới 180 ngày giá hợp lệ. Market vẫn nhận coin có ≥180 dòng và ít nhất vốn hóa hoặc volume.
