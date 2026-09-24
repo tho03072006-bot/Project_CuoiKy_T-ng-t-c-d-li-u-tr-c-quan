@@ -3,6 +3,8 @@
 Rubric mục 1 yêu cầu "nêu rõ nguồn và từ điển dữ liệu" — đây là file đó.
 Tất cả file nằm trong `data/processed/`.
 
+**Bản giải thích đầy đủ, đã đối chiếu 47 cột của bảng crypto và tất cả 7 bảng với pipeline ngày 24/09/2026:** [CHI_TIET_7_BANG_PROCESSED.md](CHI_TIET_7_BANG_PROCESSED.md). Trang hiện tại là bản tra nhanh; khi có khác biệt, ưu tiên bản chi tiết và script.
+
 ---
 
 ## 1. `fact_crypto_daily.csv.gz` — 123.358 dòng × 47 cột
@@ -91,10 +93,10 @@ Dùng cho treemap thị phần và biểu đồ khối lượng.
 | `risk_regime` | — | `Risk-off` (VIX>25) / `Trung tính` / `Risk-on` (VIX<15) |
 
 **Ghi chú `dxy`:** nguồn không phát hành chỉ số DXY trực tiếp, nên bảng này tự
-tính lại từ tỷ giá hàng ngày theo đúng công thức ICE:
+tính một chỉ số USD nội bộ từ tỷ giá hàng ngày theo công thức đang có trong script:
 `DXY = 50,14348112 × Π (tỷ giá ngoại tệ/USD)^trọng số` với trọng số
 EUR 57,6% · JPY 13,6% · GBP 11,9% · CAD 9,1% · SEK 4,2% · CHF 3,6%.
-Kiểm chứng: ngày 2022‑09‑27 công thức cho **113,96**, đỉnh DXY thực tế cùng ngày ~114.
+Nguồn tỷ giá trộn chiều USD/tiền và tiền/USD; script chưa chuẩn hóa chiều niêm yết. **Không xem đây là series DXY ICE đã kiểm chứng** hay dùng nó làm bằng chứng chính cho tương quan USD–crypto trước khi sửa và so chuỗi với nguồn độc lập.
 
 **Ghi chú quan trọng về tần suất:** các cột tần suất tháng đã được forward-fill
 sang ngày để join được với giá crypto. Hệ quả: đường của chúng có dạng bậc thang,
@@ -130,8 +132,7 @@ Bảng panel quốc gia — **đây là bảng cấp dữ liệu cho Bản đồ
 ## 5. `fact_fx_daily.csv` — 78.628 dòng × 3 cột
 
 Tỷ giá nội tệ/USD hàng ngày của 22 nền kinh tế từ 2013.
-`date` · `country_fx` · `fx_per_usd`. Dùng để kiểm định giả thuyết
-"crypto được ưa chuộng ở nơi đồng nội tệ mất giá".
+`date` · `country_fx` · `fx_per_usd`. Tên `fx_per_usd` không đúng với mọi quốc gia: nguồn trộn USD/tiền và tiền/USD, pipeline chưa đảo chiều. Nếu muốn kiểm định giả thuyết về mất giá tiền tệ, cần ánh xạ tên nước sang ISO3, chuẩn hóa chiều tỷ giá và kiểm tra độ phủ trước.
 
 ---
 

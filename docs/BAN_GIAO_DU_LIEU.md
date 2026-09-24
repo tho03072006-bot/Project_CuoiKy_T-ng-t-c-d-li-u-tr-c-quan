@@ -18,7 +18,7 @@
 | `macro/gold_monthly.csv` | https://github.com/datasets/gold-prices | Giá vàng theo tháng. |
 | `macro/brent_daily.csv` | https://github.com/datasets/oil-prices | Giá dầu Brent theo ngày. |
 | `macro/cpi_us_monthly.csv` | https://github.com/datasets/cpi-us | CPI Mỹ theo tháng; CPI YoY được tính từ chỉ số. |
-| `country/wb_cpi.csv`, `wb_gdp.csv`, `wb_population.csv` | Bản sao World Bank: https://github.com/datasets/cpi, https://github.com/datasets/gdp, https://github.com/datasets/population | Panel lạm phát, GDP, dân số theo quốc gia/năm. |
+| `country/wb_cpi.csv`, `wb_gdp.csv`, `wb_population.csv` | World Bank WDI: [lạm phát hằng năm FP.CPI.TOTL.ZG](https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG), [bản sao GDP](https://github.com/datasets/gdp), [bản sao dân số](https://github.com/datasets/population). URL bản tải cụ thể của `wb_cpi.csv` chưa được lưu. | Panel lạm phát, GDP, dân số theo quốc gia/năm. `wb_cpi.csv` chứa tỷ lệ lạm phát (%), **không phải** mức CPI 2005=100 của kho `datasets/cpi`. |
 | `country/country_codes.csv` | https://github.com/datasets/country-codes | Mã ISO3, tên nước, khu vực/châu lục cho bản đồ. |
 
 Tổng số dòng đọc từ các tệp nguồn: **530.018**, chi tiết từng nguồn ở `data/processed/_quality_checks.json`. Các tệp nguồn là bản chụp đã có trong project, không được tự thay bằng dữ liệu live nếu chưa tính lại toàn bộ bảng/hình/mô hình.

@@ -15,6 +15,8 @@
 | `data/raw/` | Bản chụp dữ liệu nguồn; xem nguồn và phạm vi trong `docs/NGUON_DU_LIEU.md`. |
 | `data/processed/` | Bảy bảng CSV đã tiền xử lý, SQLite tương ứng, tóm tắt và kiểm tra chất lượng. |
 | `docs/BAN_GIAO_DU_LIEU.md` | Bàn giao dữ liệu, khóa nối, giới hạn và cách sử dụng từng bảng. |
+| `docs/CHI_TIET_DATA_RAW.md` | Nguồn, schema và ý nghĩa cột của từng file raw, kèm danh mục 63 CSV Coin Metrics. |
+| `docs/CHI_TIET_7_BANG_PROCESSED.md` | Đủ 7 bảng xử lý, ý nghĩa cột, khóa và từng bước làm sạch/biến đổi. |
 | `docs/TU_DIEN_DU_LIEU.md` | Từ điển cột. |
 | `scripts/` | Pipeline tiền xử lý và dựng cơ sở dữ liệu; thư mục `tuy_chon_khi_co_mang_thuong/` chỉ dùng khi cần tải bổ sung. |
 | `eda/` | Script, hình và thống kê khám phá. |
